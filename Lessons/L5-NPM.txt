@@ -1,0 +1,11 @@
+NODE PACKET MANAGER
+
+1*  Nodemon--auto restarta server,globalno se instalira
+    nodemon server
+
+
+2*  npm install    --instalira node_modules i sve dependecies /ako skidamo s gita project ili ako saljemo
+
+
+3* npm i lodash
+

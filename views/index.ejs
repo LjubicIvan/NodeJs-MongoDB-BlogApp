@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+
+  <%- include("./partials/nav.ejs") %>
+    
+
+
+
+    <div class="blogs content">
+        <h2>All Blogs</h2>
+    
+        <% if (blogs.length > 0) { %>
+          <% blogs.forEach(blog => { %>
+            <a href="/blogs/<%= blog._id %>" class="single">
+            <h3 class="title"><%= blog.title %></h3>
+            <p class="snippet"><%= blog.snippet %></p>
+          </a>
+          <% }) %>
+        <% } else { %>
+          <p>There are no blogs to display...</p>
+        <% } %>
+        
+      </div>
+      <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>
